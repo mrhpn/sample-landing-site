@@ -1,0 +1,17 @@
+.btnPrimary {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  background-color: var(--color-pink);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnPrimary:hover {
+  color: var(--color-pink);
+  background-color: var(--color-white);
+}

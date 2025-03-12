@@ -1,0 +1,31 @@
+.newsItem {
+  margin-bottom: 3rem;
+}
+
+.category {
+  color: var(--color-pink);
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.newsItem h3 {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.newsItem p {
+  font-size: 1rem;
+  color: var(--color-grey);
+  margin-bottom: 10px;
+}
+
+.time {
+  font-size: 0.9rem;
+  color: #aaa;
+  font-style: italic;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

@@ -1,7 +1,12 @@
 import React from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+
+import Button from '../common/Button';
+import News from '../common/News';
+import { news } from '../../data/news';
+
 import styles from './index.module.css';
 import landingImage from '../../assets/imgs/landing-image.png';
-import NewsSection from '../NewsSection';
 
 const LandingSection: React.FC = () => {
   return (
@@ -20,13 +25,29 @@ const LandingSection: React.FC = () => {
             particular street — is the place you are living a majority of your
             life in.
           </p>
-          <button className={styles.learnMoreButton}>Learn More</button>
+          <Button label="Learn More" />
         </div>
       </div>
 
       {/* Component Section (1/3) */}
       <div className={styles.moreNewsContainer}>
-        <NewsSection />
+        <div className={styles.newsSection}>
+          <div className={styles.title}>
+            <h2>MORE NEWS</h2>
+            <div className={styles.navigationArrows}>
+              <ChevronLeft className={styles.arrow} />
+              <ChevronRight className={styles.arrow} />
+            </div>
+          </div>
+          <hr />
+
+          {/* News items */}
+          <div className={styles.newsItemWrapper}>
+            {news?.map((n) => (
+              <News data={n} />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
