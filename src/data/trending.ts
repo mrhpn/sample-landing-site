@@ -5,6 +5,7 @@ import Trending3 from '../assets/imgs/trending-3.png';
 
 export const trendings: Trending[] = [
   {
+    id: 1,
     imageUrl: Trending1,
     title: 'Dolore magna aliqua',
     description:
@@ -12,6 +13,7 @@ export const trendings: Trending[] = [
     createdTimeAgo: '2 mins ago',
   },
   {
+    id: 2,
     imageUrl: Trending2,
     title: 'Morbi eleifend a libero',
     description:
@@ -19,6 +21,7 @@ export const trendings: Trending[] = [
     createdTimeAgo: '1h ago',
   },
   {
+    id: 3,
     imageUrl: Trending3,
     title: 'Morbi eleifend a libero',
     description:

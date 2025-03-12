@@ -2,6 +2,7 @@ import { News } from '../types/news';
 
 export const news: News[] = [
   {
+    id: 1,
     category: 'travel',
     title: 'Article Title',
     content:
@@ -9,6 +10,7 @@ export const news: News[] = [
     createdTimeAgo: '2 mins ago',
   },
   {
+    id: 2,
     category: 'technology',
     title: 'Article Title',
     content:

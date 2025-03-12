@@ -22,7 +22,7 @@
 
 .time {
   font-size: 0.9rem;
-  color: #aaa;
+  color: var(--color-grey);
   font-style: italic;
 
   display: flex;

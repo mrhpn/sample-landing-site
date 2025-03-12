@@ -35,7 +35,7 @@ const LandingSection: React.FC = () => {
           <div className={styles.title}>
             <h2>MORE NEWS</h2>
             <div className={styles.navigationArrows}>
-              <ChevronLeft className={styles.arrow} />
+              <ChevronLeft className={`${styles.arrow} ${styles.arrowLeft}`} />
               <ChevronRight className={styles.arrow} />
             </div>
           </div>
@@ -44,7 +44,7 @@ const LandingSection: React.FC = () => {
           {/* News items */}
           <div className={styles.newsItemWrapper}>
             {news?.map((n) => (
-              <News data={n} />
+              <News key={n.id} data={n} />
             ))}
           </div>
         </div>
