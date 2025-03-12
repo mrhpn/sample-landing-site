@@ -4,7 +4,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #a3a7a7;
+  color: var(--color-grey);
   font-size: 18px;
   padding: 5px;
   transition: color 0.3s;
@@ -14,5 +14,5 @@ a {
 }
 
 a.active {
-  color: #000000;
+  color: var(--color-black);
 }

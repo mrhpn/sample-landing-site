@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <main style={{ padding: '20px' }}>
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/discovery" element={<Discovery />} />
