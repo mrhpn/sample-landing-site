@@ -1,0 +1,136 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 50px;
+  max-width: 600px;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.column ul li {
+  margin: 5px 0;
+}
+
+.column ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+  text-transform: capitalize;
+}
+
+.column ul li a:hover {
+  color: var(--color-black);
+}
+
+.middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle span {
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.emailWrapper {
+  position: relative;
+}
+
+.emailInput {
+  padding: 10px;
+  font-size: 1rem;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+}
+
+.emailInput::placeholder {
+  font-size: 0.8rem;
+  color: var(--color-white) !important;
+}
+
+.emailWrapper .sendIcon {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  fill: var(--color-white);
+}
+
+.emailInput::placeholder {
+  color: #aaa;
+}
+
+.last {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .column {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .middle {
+    margin-top: 20px;
+  }
+
+  .last {
+    margin-top: 20px;
+  }
+
+  .socialIcon {
+    width: 30px;
+    height: 30px;
+  }
+}

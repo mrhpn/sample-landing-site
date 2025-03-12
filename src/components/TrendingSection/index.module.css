@@ -1,0 +1,70 @@
+.trendingSection {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleWrapper .navigationArrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleWrapper .navigationArrows .arrow {
+  padding: 10px;
+}
+
+.titleWrapper .navigationArrows .arrow:hover {
+  cursor: pointer;
+  background-color: var(--color-grey);
+  border-radius: 100%;
+}
+
+.titleWrapper .navigationArrows .arrowLeft {
+  color: var(--color-grey);
+}
+.titleWrapper .navigationArrows .arrowLeft:hover {
+  cursor: not-allowed;
+  background-color: inherit;
+}
+
+.title {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.trendingCardsWrapper {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Large screens: 3 cards per row */
+@media (min-width: 1024px) {
+  .trendingCardsWrapper > * {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+}
+
+/* Medium screens: 2 cards per row */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .trendingCardsWrapper > * {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* Small screens: 1 card per row */
+@media (max-width: 767px) {
+  .trendingCardsWrapper > * {
+    flex: 1 1 100%;
+  }
+}

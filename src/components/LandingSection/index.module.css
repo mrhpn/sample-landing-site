@@ -1,0 +1,144 @@
+.landingSection {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-color: var(--color-white);
+}
+
+.imageContainer {
+  flex: 2;
+  position: relative;
+  width: 60%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: var(--color-white);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.textOverlay h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.textOverlay hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 2px solid var(--color-white);
+  width: 100%;
+}
+
+.textOverlay h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.textOverlay p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.moreNewsContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.moreNewsContainer .newsSection {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 50px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+}
+
+.moreNewsContainer .newsItemWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.moreNewsContainer .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moreNewsContainer .title h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: var(--color-black);
+}
+
+.moreNewsContainer .navigationArrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.moreNewsContainer .navigationArrows .arrow {
+  padding: 10px;
+}
+
+.moreNewsContainer .navigationArrows .arrow:hover {
+  cursor: pointer;
+  background-color: var(--color-grey);
+  border-radius: 100%;
+}
+
+.moreNewsContainer .navigationArrows .arrowLeft {
+  color: var(--color-grey);
+}
+.moreNewsContainer .navigationArrows .arrowLeft:hover {
+  cursor: not-allowed;
+  background-color: inherit;
+}
+
+.moreNewsContainer .newsSection hr {
+  border: 1px solid var(--color-grey);
+  margin: 2rem 0;
+  width: 100%;
+}
+
+@media (max-width: 1080px) {
+  .landingSection {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    height: 100%;
+    width: 100%;
+  }
+
+  .moreNewsContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 1080px) and (min-width: 768px) {
+  .moreNewsContainer .newsItemWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}

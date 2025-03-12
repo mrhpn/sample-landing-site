@@ -1,0 +1,33 @@
+.notFoundContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  background-color: var(--color-white);
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 0;
+  color: var(--color-black);
+}
+
+.message {
+  font-size: 1.2rem;
+  color: var(--color-grey);
+  margin-bottom: 20px;
+}
+
+.homeLink {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: var(--color-pink);
+  text-decoration: none;
+}
+
+.homeLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
